@@ -1,10 +1,80 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>My First AWS Deployment</title>
+    <meta charset="UTF-8">
+    <title>Simple Login Page</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            width: 300px;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid gray;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: royalblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: darkblue;
+        }
+    </style>
+
 </head>
-<body style="text-align:center; margin-top:50px; font-family:Arial;">
-    <h1>It works!</h1>
-    <p>This page is being served from a private EC2 instance behind a load balancer.</p>
+<body>
+
+    <div class="login-box">
+        <h2>Login</h2>
+
+        <form>
+            <label>Username</label>
+            <input type="text" placeholder="Enter Username">
+
+            <label>Password</label>
+            <input type="password" placeholder="Enter Password">
+
+            <button type="submit">Login</button>
+        </form>
+    </div>
+
 </body>
 </html>
